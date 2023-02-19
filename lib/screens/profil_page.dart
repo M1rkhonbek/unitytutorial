@@ -8,6 +8,8 @@ class ProfilPages extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final BlackColor = Colors.black54;
+    int index = 2;
+
     return Scaffold(
       backgroundColor: Colors.grey.shade300,
       bottomNavigationBar: CurvedNavigationBar(
@@ -31,9 +33,7 @@ class ProfilPages extends StatelessWidget {
             label: 'Personal',
           ),
         ],
-        onTap: (index) {
-          // Handle button tap
-        },
+        onTap: (SelectInte) {},
       ),
       appBar: AppBar(
         centerTitle: true,
@@ -98,51 +98,25 @@ class ProfilPages extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Icon(
-                    Icons.person,
-                    size: 30,
-                    color: BlackColor,
-                  ),
-                  Text(
-                    'My Profile',
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w500,
-                      color: BlackColor,
-                    ),
-                  ),
-                  Icon(
-                    Icons.arrow_forward_ios_rounded,
-                    size: 30,
-                    color: BlackColor,
-                  ),
-                ],
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 30.0,
-          ),
-          Container(
-            child: Padding(
-              padding: const EdgeInsets.only(
-                left: 20,
-                right: 20,
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Icon(
-                    Icons.settings,
-                    size: 30,
-                    color: BlackColor,
-                  ),
-                  Text(
-                    'Seetings',
-                    style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w500,
-                        color: BlackColor),
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.person,
+                        size: 30,
+                        color: BlackColor,
+                      ),
+                      SizedBox(
+                        width: 15,
+                      ),
+                      Text(
+                        'My Profile',
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w500,
+                          color: BlackColor,
+                        ),
+                      ),
+                    ],
                   ),
                   Icon(
                     Icons.arrow_forward_ios_rounded,
@@ -165,18 +139,25 @@ class ProfilPages extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Icon(
-                    Icons.chat,
-                    size: 30,
-                    color: BlackColor,
-                  ),
-                  Text(
-                    'FAQs',
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w500,
-                      color: BlackColor,
-                    ),
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.settings,
+                        size: 30,
+                        color: BlackColor,
+                      ),
+                      SizedBox(
+                        width: 15,
+                      ),
+                      Text(
+                        'Settings',
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w500,
+                          color: BlackColor,
+                        ),
+                      ),
+                    ],
                   ),
                   Icon(
                     Icons.arrow_forward_ios_rounded,
@@ -199,18 +180,66 @@ class ProfilPages extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.chat,
+                        size: 30,
+                        color: BlackColor,
+                      ),
+                      SizedBox(
+                        width: 15,
+                      ),
+                      Text(
+                        'FAQs',
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w500,
+                          color: BlackColor,
+                        ),
+                      ),
+                    ],
+                  ),
                   Icon(
-                    Icons.logout,
+                    Icons.arrow_forward_ios_rounded,
                     size: 30,
                     color: BlackColor,
                   ),
-                  Text(
-                    'Logout',
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w500,
-                      color: BlackColor,
-                    ),
+                ],
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 30.0,
+          ),
+          Container(
+            child: Padding(
+              padding: const EdgeInsets.only(
+                left: 20,
+                right: 20,
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.logout,
+                        size: 30,
+                        color: BlackColor,
+                      ),
+                      SizedBox(
+                        width: 15,
+                      ),
+                      Text(
+                        'Logout',
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w500,
+                          color: BlackColor,
+                        ),
+                      ),
+                    ],
                   ),
                   Icon(
                     Icons.arrow_forward_ios_rounded,
