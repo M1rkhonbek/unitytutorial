@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:pro_unity_login/screens/main_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -48,16 +49,18 @@ class _LoginPageState extends State<LoginPage> {
               ),
               Padding(
                 padding: EdgeInsets.only(left: 40, right: 40),
-                child: TextField(
-                  obscureText: true,
-                  // ignore: prefer_const_constructors
-                  decoration: InputDecoration(
-                    hintText: 'Password',
-                    enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
-                        color: Colors.black,
+                child: Container(
+                  child: TextFormField(
+                    obscureText: true,
+                    // ignore: prefer_const_constructors
+                    decoration: InputDecoration(
+                      hintText: 'Password',
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Colors.black,
+                        ),
+                        borderRadius: BorderRadius.all(Radius.circular(10)),
                       ),
-                      borderRadius: BorderRadius.all(Radius.circular(10)),
                     ),
                   ),
                 ),
@@ -67,7 +70,10 @@ class _LoginPageState extends State<LoginPage> {
               ),
               Container(
                 child: ElevatedButton.icon(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => MainPage()));
+                  },
                   icon: Text('Kirish'),
                   label: Icon(
                     Icons.arrow_forward,
