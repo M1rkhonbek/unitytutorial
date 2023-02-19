@@ -98,8 +98,24 @@ class ProfilPages extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Icon(Icons.settings),
-                  Icon(Icons.arrow_forward),
+                  Icon(
+                    Icons.person,
+                    size: 30,
+                    color: BlackColor,
+                  ),
+                  Text(
+                    'My Profile',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w500,
+                      color: BlackColor,
+                    ),
+                  ),
+                  Icon(
+                    Icons.arrow_forward_ios_rounded,
+                    size: 30,
+                    color: BlackColor,
+                  ),
                 ],
               ),
             ),
@@ -116,8 +132,23 @@ class ProfilPages extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Icon(Icons.settings),
-                  Icon(Icons.arrow_forward),
+                  Icon(
+                    Icons.settings,
+                    size: 30,
+                    color: BlackColor,
+                  ),
+                  Text(
+                    'Seetings',
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w500,
+                        color: BlackColor),
+                  ),
+                  Icon(
+                    Icons.arrow_forward_ios_rounded,
+                    size: 30,
+                    color: BlackColor,
+                  ),
                 ],
               ),
             ),
@@ -134,8 +165,24 @@ class ProfilPages extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Icon(Icons.settings),
-                  Icon(Icons.arrow_forward),
+                  Icon(
+                    Icons.chat,
+                    size: 30,
+                    color: BlackColor,
+                  ),
+                  Text(
+                    'FAQs',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w500,
+                      color: BlackColor,
+                    ),
+                  ),
+                  Icon(
+                    Icons.arrow_forward_ios_rounded,
+                    size: 30,
+                    color: BlackColor,
+                  ),
                 ],
               ),
             ),
@@ -152,8 +199,24 @@ class ProfilPages extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Icon(Icons.settings),
-                  Icon(Icons.arrow_forward),
+                  Icon(
+                    Icons.logout,
+                    size: 30,
+                    color: BlackColor,
+                  ),
+                  Text(
+                    'Logout',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w500,
+                      color: BlackColor,
+                    ),
+                  ),
+                  Icon(
+                    Icons.arrow_forward_ios_rounded,
+                    size: 30,
+                    color: BlackColor,
+                  ),
                 ],
               ),
             ),
