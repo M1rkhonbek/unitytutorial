@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:pro_unity_login/screens/profil_page.dart';
 import 'package:curved_labeled_navigation_bar/curved_navigation_bar.dart';
 import 'package:curved_labeled_navigation_bar/curved_navigation_bar_item.dart';
-import 'package:pro_unity_login/util/course_card.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -27,16 +25,12 @@ class _MainPageState extends State<MainPage> {
             label: 'Home',
           ),
           CurvedNavigationBarItem(
-            child: Icon(Icons.chat_bubble_outline),
-            label: 'Chat',
-          ),
-          CurvedNavigationBarItem(
             child: Icon(Icons.newspaper),
-            label: 'Feed',
+            label: 'Course',
           ),
           CurvedNavigationBarItem(
             child: Icon(Icons.perm_identity),
-            label: 'Personal',
+            label: 'Profile',
           ),
         ],
         onTap: (index) {
